@@ -7,5 +7,6 @@ namespace PhotoSharingApp.Model
 {
     public class User
     {
+
     }
 }
