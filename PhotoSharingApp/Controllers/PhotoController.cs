@@ -8,11 +8,14 @@ using System.Web.Mvc;
 namespace PhotoSharingApp.Controller
 {
     public class PhotoController : System.Web.Mvc.Controller
-    {   // GET: Photo
+    {
+        private PhotoSharingContext context = new PhotoSharingContext();
+        
+        // GET: Photo
         public ActionResult Index()
-        {
+        {   
             var photo = new Photo();
-            return View(photo);
+            return View(context.Photos.First<Photo>());
         }
     }
 }
