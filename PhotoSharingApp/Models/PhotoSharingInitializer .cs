@@ -14,10 +14,10 @@ namespace PhotoSharingApp.Models
             List<Comment> comments = new List<Comment>();
             List<Photo> photo = new List<Photo>();
             Photo ph = new Photo();
-            ph.Title = "Test";
+            ph.Title = "Test Photo";
             ph.Description = "description";
             ph.Owner = "Me";
-            ph.PhotoFile = System.IO.File.ReadAllBytes("\\Users\\Isaac\\photoSharingApplication\\photoSharingApp\\Images\\Capture.PNG");
+            ph.PhotoFile = System.IO.File.ReadAllBytes("\\Users\\Isaac\\photoSharingApplication\\photoSharingApp\\Images\\1.jpg");
             ph.CreatedDate = DateTime.Now;
             ph.ImageMimeType = "image/PNG";
             photo.Add(ph);
