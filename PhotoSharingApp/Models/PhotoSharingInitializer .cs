@@ -17,7 +17,7 @@ namespace PhotoSharingApp.Models
             ph.Title = "Test Photo";
             ph.Description = "description";
             ph.Owner = "Me";
-            ph.PhotoFile = System.IO.File.ReadAllBytes("\\Users\\Isaac\\photoSharingApplication\\photoSharingApp\\Images\\1.jpg");
+            ph.PhotoFile = System.IO.File.ReadAllBytes("C:\\Users\\Isaac\\photoSharingApplication\\photoSharingApp\\Images\\1.jpg");
             ph.CreatedDate = DateTime.Now;
             ph.ImageMimeType = "image/PNG";
             photo.Add(ph);

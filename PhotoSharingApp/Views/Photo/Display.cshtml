@@ -20,6 +20,7 @@
             <dt>
                 @Html.DisplayNameFor(model => model.Title)
                 @if (Model.PhotoFile != null)
+
                 {
                     <img width="800" src="@Url.Action("GetImage", "Photo",
                                            new { id=Model.PhotoID })" />
@@ -73,8 +74,7 @@
         </dl>
     </div>
     <p>
-        @Html.ActionLink("Edit", "Edit", new { id = Model.PhotoID }) |
-        @Html.ActionLink("Back to List", "Index")
+     @Html.ActionLink("Back", "Index")
     </p>
 </body>
 </html>
